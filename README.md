@@ -4,6 +4,7 @@
 
 Site de um box de crossfit já existente com o objetivo de complementar as informações sobre o local e duvidas sobre a modalidade.
 
+Site do Projeto: https://francinyevans.github.io/Projeto-Crossfit/
 
 ## Inspirações
 
