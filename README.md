@@ -24,4 +24,4 @@ Site de um box de crossfit já existente com o objetivo de complementar as infor
 
 email: francinyevans@gmail.com
 
-numero: (83) 99612-8457.
+numero: (83) 99612-8457..

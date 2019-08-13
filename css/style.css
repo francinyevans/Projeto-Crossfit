@@ -1,14 +1,14 @@
-/* NORMALIZAÇÃO */
+/* NORMALIZAÇÃO DEFAULT */
 
-* {
+*{
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
 }
-body {
-    background-color: #DDDDDD;
-}
 
+body {
+    background-color: #dddddd;
+}
 a {
     color: #DDDDDD;
 }
@@ -23,444 +23,419 @@ a:hover {
     height: 2px;
     margin: 0 auto;
     background-color: #111111;
+    MARGIN-top: 40PX;
 }
-/* COMPONENTES */
+/****** MOBILE FIRST *****/
 
-header {
-    /* centraliza o texto no meio
-    pois a linha tem a mesma altura da div,
-    ou seja, a div só tem 1 linha. */
-    height: 50px;
-    line-height: 50px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #111111;
-}
-
-@media only screen and (max-width: 800px) {
-    header {
-        justify-content: space-around;
-    }
-}
-
-header .logo {
-    font-family: 'Saira Stencil One';
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 30px;
-    color: #DDDDDD;
-    padding: 0 10px;
-}
-
-@media only screen and (max-width: 800px) {
-    nav {
-         display: none; 
-    }
-}
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    padding: 0 10px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    border-right: solid #DDDDDD 1px;
-    padding: 0 10px;
-    font-family: 'Anton';
-}
-
-header nav ul li:last-child a {
-    border-right: none;
-}
-
-.session {
-    min-height: 550px;
-    background-color: #DDDDDD;
-}
-
-#principal {
-    background-image: url("../images/img05-pb.jpeg");
-    background-position-x: center;
-    background-size: cover;
-}
-
-
-
-#principal .text {
-    font-family: 'Anton';
-    color: #FFDC00;
-    text-align: center;
-    font-size: 45px;
-    color: #FFDC00;
-    text-shadow: 2px 2px #111111;
+@media screen and (min-width: 400px) {
     
-}
-
-/*animação*/
-
-#principal .text{
-    animation: esquerda 2s;
-}
-@keyframes esquerda{
-    0%{
-        opacity: 0;
-        position: relative;
-        right: 100px;
-      }
-      30%{
-        opacity: 0;
-      }
-      80%{
-        opacity: 1;
-      }
-      100% {    
-        position: relative;
-        right: 0;
-      }
-}
-
-
-.button a:hover{
-    transform: scale(1.4)
-}
-
-
-#principal .card {
-    margin: 0 auto;
-    width: 400px;
-    height: 550px;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-
-#principal .button {
-    background-color: #FFDC00;
-    color: #111111;
-    width: 300px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;    
-    border-radius: 50px 50px;
-    margin: 50px auto;
-    transition: transform 1s;
-    will-change: scale;
-   
-}
-.gorw .button{
-    transition: transform  1s;
-    will-change: scale;
-}
-.grow .button a:hover{
-    transform: scale(1.2);
-}
-
-
-#principal .button a {
-    color: #111111;
-    font-size: 30px;
-    font-family: 'Anton';
-    text-decoration: none;
-    text-transform: uppercase;
-   
-   
-}
-
-#principal .button a:hover {
-    color: #111111;
-    text-decoration: none;
-
-}
-
-#informacoes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    color: #DDDDDD;
-    font-family: 'Roboto';
-    font-size: 30px;
-}
-
-
-/* cards*/
-
-#informacoes .card {
-    background-color: #111111;
-    display: inline-block;
-    height: 400px;
-    width: 400px;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Anton';
-    border-radius: 4px;
-}
-
-#informacoes .card i {
-    color: #FFDC00;
-    font-size: 50px;
-}
-
-
-/*** Sessão Crossfit ***/
-
-
-@media screen and (min-width: 500px){
-
-    .pratica{
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .textcard{
-        font-family: 'Roboto', sans-serif;
-        text-align: justify;
-        margin: 20px;
-        font-size: 20pt;
-        
-    }
-    .box h1{
-        padding-top: 20px;
+    header {
         text-align: center;
-        font-family: 'Anton', sans-serif;
-        font-size: 30pt;
+        font-family: 'Saira Stencil One';
+    }
+
+    div.text {
+        text-align: center;
+        line-height: 100px;
+    }
+
+    div.principal {
+        text-align: center;
+
+    }
+
+    header nav{
+        background-color: #000000;
+    }
+    
+    div.principal {
+        background-image: url('../images/img05-pb.jpeg');
+        min-height: 300px;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+    h1#logo {
+        color: #dddddd;
+        text-transform: uppercase;
+        background-color: #000000;
+        font-size: 30px;
+        padding: 0 10px;
+    }
+    
+    nav ul a {
+        font-family: 'Anton';
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 5px;
+        text-transform: uppercase;
+    }
+    nav ul a:hover {
+        font-family: 'Anton';
+        color: #ffdc00;
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 5px;
         text-transform: uppercase;
     }
 
-    .box img{
+    li:last-child a {
+        border-right: none;
+    }
+    
+    div h1#logo2{
+        font-family: 'Anton';
+        color: #ffdc00;
+        font-size: 30px;
+        text-shadow: 2px 2px #111111;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 200px;
+    }
+
+    /* animação */
+    div h1#logo2{
+        animation: esquerda 2s;
+    }
+
+    nav ul a {
+        animation: esquerda 2s;
+    }
+
+    h1#logo {
+        animation: esquerda 2s;
+    }
+
+    @keyframes esquerda{
+        0%{
+            opacity: 0;
+            position: relative;
+            right: 100px;
+          }
+          30%{
+            opacity: 0;
+          }
+          80%{
+            opacity: 1;
+          }
+          100% {    
+            position: relative;
+            right: 0;
+          }
+    }
+
+    /* fim da animaçãp */
+
+    /* F.A.Q */
+
+    div.imagem{ 
+        text-align: center;
+    }
+    .imagem img{
+        width: 60vw;
+        height: 60vh;
+        border-radius: 4px;
+        align-items: center;
+        display: inline-flex;
+        margin-bottom: 60px;
+    }
+    
+    .textcard h1#logo3  {
+        text-align: center;
+        font-family: 'anton';
+        color: #000000;
+        font-size: 30pt;
+        text-transform: uppercase;
+        margin: 20px 0 20px 0; 
+    }
+    .textcard p  {
+        text-align: justify;
+        font-family: 'Roboto';
+        font-size: 18pt;
+        padding-bottom: 20PX;
+        margin: 20px 10px 20px 10px;        
+    }
+
+    /* FIM F.A.Q */
+
+    /***** CARDS *****/
+
+    #informacoes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #DDDDDD;
+        font-family: 'Roboto';
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    
+    /* cards*/
+    
+    #informacoes .card {
+        background-color: #111111;
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Anton';
+        border-radius: 4px;
+        text-transform: uppercase;
+        
+    }
+    
+    #informacoes .card i {
+        color: #FFDC00;
+        font-size: 50px;
+    }
+    /* FIM CARDS */
+
+    /***** LOCALIZAÇÃO *******/
+    
+    div .localizacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+     
+    }
+    
+    #localizacao{
+        padding-bottom: 20px;
+        font-family: 'Anton';
+        text-transform: uppercase;
+        text-align: center;
         padding-top: 20px;
-        width: 100%;  /*Dimensão img*/
-        height: 350px;
-        margin-bottom: 40px;
+        font-size: 30pt;
+        
+    }
+    
+    iframe{
+        width: 80%;
+        height: 450px;
+    }
+    
+    div .iframe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    /* FIM LOCALIZAÇÃO */
+
+
+   /***** Formulário *******/
+
+   div form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+        font-family: 'Roboto';
+        width: 100%;
+    }
+
+    div form input {
+        font-family: 'Roboto', sans-serif;
+        width: 380px;
+        height: 30px;
+        margin-bottom: 10px;
         border-radius: 4px;
     }
-   
-}
-@media screen and (min-width:900px){
 
-    .pratica{
-        background-color: #DDDDDD;
-        display: flex;
-        padding: 0 10px;
-        align-items: center;
+    #contato {
+        padding-bottom: 20px;
         font-family: 'Anton';
-        color: black;
-
+        text-transform: uppercase;
+        font-size: 30pt;
     }
 
-    .textcard{
-        font-size: 18pt;
+    #nome {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+
+    #email {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    #msg {
+        padding-top: 10px;
+        margin-top: 10px;
+        width: 380px;
+        height: 14vh;
+        margin-bottom: 10px;
         font-family: 'Roboto', sans-serif;
-        text-align: justify;
-        margin: 40px;
-        font-size: 30pt;
-        
+        font-size: 13px;
+        margin-bottom: 10px;
+        border-radius: 4px;
     }
-    .box h1{
-        padding-top: 20px;
+
+    #buton {
+    
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: white;
+        background-color: #111111;
         text-align: center;
-        font-family: 'Anton', sans-serif;
-        font-size: 30pt;
+        width: 400px;
+        height: 40px;
+        margin-bottom: 10px;
+        border-radius: 4px;
     }
 
-    .box img{
-        width: 100%;  /*Dimensão img*/
-        height: 60%;
-        margin: 0;
+    #contato h2 {
         padding-top: 20px;
-        margin-bottom: 40px;
-       
-}
+
+    }
+
+    /****** fim formulário *****/
+
+    /******* Footer *******/
+    
+    #icones{
+        -webkit-box-direction: normal;
+        -webkit-box-pack: center;
+        -webkit-box-orient: horizontal;
+        -ms-flex-direction: row;
+        -ms-flex-pack: center;
+        flex-direction: row;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+        justify-content: center;
         
-}
-
-/*** Fim do componente ***/
-
-.session img{
-    filter: grayscale(100%);
-    transition: filter 1s;
-    will-change: scale;
-    transition: transform 1s;
-}
-.session img:hover {
-    transform: scale(1.1);
-    filter: grayscale(0%);
-    transition: 1s;
-}
-
-/*formulario*/
-
-div form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20vh;
-    font-family: 'Roboto';
-    width: 100%;
-}
-div form input{
-    font-family: 'Roboto', sans-serif;
-    width: 400px;
-    height: 30px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-#contato{
-    padding-bottom: 20px;
-    font-family: 'Anton';
-    text-transform: uppercase;
-    font-size: 30pt;
-}
-#nome{
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
-
-#email{
-    padding-top: 10px;
-    margin-top: 10px;
-}
-#msg{
-    padding-top: 10px;
-    margin-top: 10px;
-    width: 400px;
-    height: 14vh;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-#buton{
-   
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: white;
-    background-color: #111111;
-    text-align: center;
-    width: 400px;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-#contato h2{
-    padding-top: 20px;
-
-}
-/* fin do componente*/
-
-/*Location*/
-
-div .localizacao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
- 
-}
-
-#localizacao{
-    padding-bottom: 20px;
-    font-family: 'Anton';
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 30pt;
+    }
     
-}
+    .footer p{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        line-height: 4px;
+        white-space: nowrap;
+        color: #DDDDDD;
+        margin-top: 4px;
 
-iframe{
-    width: 80%;
-    height: 450px;
-}
-
-div .iframe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 100%;
-    padding-bottom: 60px;
-}
-/*fim do componente*/
-
-
-/*** Footer ***/
-footer {
-    width: 100%;
-    height: 250px;
-    background-color: #111111;
-}
-
-
-.footer{
-    width: 100%;
-    height: 120px;
-    justify-content: center;
-}
-
-#icones{
-    -webkit-box-direction: normal;
-    -webkit-box-pack: center;
-    -webkit-box-orient: horizontal;
-    -ms-flex-direction: row;
-    -ms-flex-pack: center;
-    flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-
-.footer p{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    line-height: 4px;
-    white-space: nowrap;
-    color: #DDDDDD;
-    margin-top: 4px;
-
-}
-
-div ul #linkfooter{
-    padding-bottom: 100px;
-}
-
-#icones li {
-    margin-top: 40px;
-}
-
-#icones li a{
-    color: #DDDDDD;
-    margin-right: 15px;
-    font-size: 35px;
-}
-
-#icones li a:hover{
-    color: #FFDC00;
-    text-decoration: underline;
-}
-
-
-
-
+    }
     
+    div ul #linkfooter{
+        padding-bottom: 100px;
+    }
+    
+    #icones li {
+        margin-top: 40px;
+    }
+    
+    #icones li a{
+        color: #DDDDDD;
+        margin-right: 15px;
+        font-size: 35px;
+    }
+    
+    #icones li a:hover{
+        color: #FFDC00;
+        text-decoration: underline;
+    }
+    footer {
+        background-color: #000000;
+    }
+    div p#develop{
+        font-family: 'Anton';
+        color: white;
+        text-transform: capitalize;
+        text-align: end;
+        margin-right: 50px;
+        text-align: center;
+        padding-top: 10PX;
+    }
+    /****** Fim Footer ******/
+
+}
+
+/***** FIM MOBILE FIRST *****/
+
+@media screen and (min-width: 600px) {
+    ul {
+        display: inline-flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center; 
+    } 
+
+    h1#logo {
+        margin-right: 18vw;
+    }
+
+    nav ul a {
+        font-family: 'Anton';
+        color: white;
+        text-decoration: none;
+        margin: 5px;
+        border-right: 1px solid white;
+        padding-right: 8px;
+    }
+
+    div.principal {
+        background-image: url('../images/img05-pb.jpeg');
+        min-height: 600px;
+        background-position-x: center;
+        background-size: cover;
+        
+    }
+
+    h1#logo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    ul {
+        display: inline-flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    
+    div.principal {
+        background-image: url('../images/img05-pb.jpeg');
+        min-height: 600px;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+    h1#logo {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    ul {
+        display: inline-flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    div.principal {
+        background-image: url('../images/img05-pb.jpeg');
+        min-height: 600px;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+}
+
